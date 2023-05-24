@@ -1,0 +1,6 @@
+#Ignore the following files
+
+# General
+.DS_Store
+.vscode/
+Mockups/
