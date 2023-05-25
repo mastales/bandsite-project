@@ -1,8 +1,16 @@
 .body {
+    margin-left: 1rem;
+    margin-right: 1rem;
     
     &__title {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+        font-family: 'AvenirNextLTPro-Demi';
+        font-size: 3.75rem;
+        margin-left: 1rem;
     }
-
+ 
+    &__img {
+        height: 50vh;
+        width: 100vw;
+    }
 }
+
