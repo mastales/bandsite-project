@@ -1,0 +1,30 @@
+.hero {
+    display: flex;
+    
+    &__title {
+        font-family: "AvenirNextLTPro-Demi";
+        color: white;
+        font-size: 3.75rem;
+        position: absolute;
+        bottom: 5.75rem;
+        left: 1rem; 
+    }
+
+    &__img {
+        height: 80vh;
+        width: 100vw;
+    }
+
+    &__img--overlay {
+        inset: 0;
+        position: absolute; 
+        top: 8.65rem;
+        background: #323232 rgba(0.5);
+     /* center overlay text */
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}

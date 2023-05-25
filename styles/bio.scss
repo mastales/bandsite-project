@@ -1,4 +1,7 @@
+// Partial file links
 @use './partials/header';
+@use './partials/hero';
+
 
 /* Font Face Links */
 @font-face {
@@ -22,6 +25,8 @@
     font-style: normal;
 }
 
-* {
-    font-family: 'AvenirNextLTPro-Regular';
+body {
+    margin: 0;
 }
+
+
