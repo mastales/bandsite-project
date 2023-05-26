@@ -1,0 +1,21 @@
+// Mixins
+@mixin tablet {
+    @media (min-width: 768px) and (max-width: 1279px) {
+        @content;
+    }
+}
+
+// Variables
+
+// SCSS Code
+.section {
+    background-color: #FAFAFA;
+    font-family: 'AvenirNextLTPro-Demi';
+    font-size: 2rem;
+
+    &__title {
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        
+    }
+}

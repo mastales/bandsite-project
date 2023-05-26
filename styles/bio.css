@@ -102,6 +102,16 @@
   line-height: 1.75rem;
 }
 
+.section {
+  background-color: #FAFAFA;
+  font-family: "AvenirNextLTPro-Demi";
+  font-size: 2rem;
+}
+.section__title {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
 /* Font Face Links */
 @font-face {
   font-family: "AvenirNextLTPro-Regular";
