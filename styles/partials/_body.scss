@@ -1,16 +1,45 @@
+// Mixins
+@mixin tablet {
+    @media (min-width: 768px) and (max-width: 1279px) {
+        @content;
+    }
+}
+
 .body {
     margin-left: 1rem;
     margin-right: 1rem;
-    
+
     &__title {
         font-family: 'AvenirNextLTPro-Demi';
-        font-size: 3.75rem;
-        margin-left: 1rem;
+        font-size: 2rem;
+        // margin-left: 1rem;
     }
  
     &__img {
         height: 50vh;
         width: 100vw;
+    }
+
+    &__text--bold { 
+        font-family: 'AvenirNextLTPro-Demi';
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    &__text--quote {
+        margin-top: 0;
+    }
+
+    &__subtitle { 
+        font-family: 'AvenirNextLTPro-Regular';
+        font-size: 1.5rem;
+
+    }
+
+    &__text {
+        font-family: 'AvenirNextLTPro-Regular';
+        line-height: 1.75rem;
     }
 }
 

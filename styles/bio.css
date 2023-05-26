@@ -27,6 +27,11 @@
   list-style: none;
   color: white;
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .header__list-item {
+    font-size: 1.5rem;
+  }
+}
 
 .hero {
   display: flex;
@@ -34,14 +39,16 @@
 .hero__title {
   font-family: "AvenirNextLTPro-Demi";
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   position: absolute;
-  bottom: 12rem;
-  left: 1rem;
+  bottom: 8rem;
+  margin-left: 1rem;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .hero__title {
     bottom: 9rem;
+    font-size: 3rem;
+    margin-left: 2.25rem;
   }
 }
 .hero__img {
@@ -61,7 +68,7 @@
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .hero__img--overlay {
-    top: 10.1rem;
+    top: 10.75rem;
   }
 }
 
@@ -71,12 +78,28 @@
 }
 .body__title {
   font-family: "AvenirNextLTPro-Demi";
-  font-size: 3.75rem;
-  margin-left: 1rem;
+  font-size: 2rem;
 }
 .body__img {
   height: 50vh;
   width: 100vw;
+}
+.body__text--bold {
+  font-family: "AvenirNextLTPro-Demi";
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.body__text--quote {
+  margin-top: 0;
+}
+.body__subtitle {
+  font-family: "AvenirNextLTPro-Regular";
+  font-size: 1.5rem;
+}
+.body__text {
+  font-family: "AvenirNextLTPro-Regular";
+  line-height: 1.75rem;
 }
 
 /* Font Face Links */

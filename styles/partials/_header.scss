@@ -36,6 +36,10 @@
     &__list-item {
         list-style: none;
         color: white;
+
+        @include tablet {
+            font-size: 1.5rem;
+        }
     }
 }
 
