@@ -5,6 +5,7 @@
 }
 .header__title {
   margin-top: 0;
+  padding-top: 1.5rem;
   color: white;
   display: flex;
   justify-content: center;
@@ -33,10 +34,15 @@
 .hero__title {
   font-family: "AvenirNextLTPro-Demi";
   color: white;
-  font-size: 3.75rem;
+  font-size: 3rem;
   position: absolute;
-  bottom: 5.75rem;
+  bottom: 12rem;
   left: 1rem;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .hero__title {
+    bottom: 9rem;
+  }
 }
 .hero__img {
   height: 80vh;
@@ -45,13 +51,18 @@
 .hero__img--overlay {
   inset: 0;
   position: absolute;
-  top: 8.65rem;
+  top: 7rem;
   background: rgba(57, 57, 57, 0.5);
   /* center overlay text */
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .hero__img--overlay {
+    top: 10.1rem;
+  }
 }
 
 .body {

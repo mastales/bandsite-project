@@ -1,13 +1,26 @@
+// Mixins
+@mixin tablet {
+    @media (min-width: 768px) and (max-width: 1279px) {
+        @content;
+    }
+}
+
+
+
 .hero {
     display: flex;
     
     &__title {
         font-family: "AvenirNextLTPro-Demi";
         color: white;
-        font-size: 3.75rem;
+        font-size: 3rem;
         position: absolute;
-        bottom: 5.75rem;
+        bottom: 12rem;
         left: 1rem; 
+
+        @include tablet {
+            bottom: 9rem;
+        }
     }
 
     &__img {
@@ -18,12 +31,16 @@
     &__img--overlay {
         inset: 0;
         position: absolute; 
-        top: 8.65rem;
+        top: 7rem;
         background: rgba(57, 57, 57, 0.5);
      /* center overlay text */
         height: 80vh;
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include tablet {
+            top: 10.1rem;
+        }
     }
 }
