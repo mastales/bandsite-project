@@ -53,7 +53,6 @@
 }
 .hero__img {
   height: 80vh;
-  width: 100vw;
 }
 .hero__img--overlay {
   inset: 0;
@@ -110,6 +109,37 @@
 .section__title {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
+}
+
+.footer {
+  background-color: #323232;
+  color: white;
+}
+.footer__title {
+  font-family: "AvenirNextLTPro-Regular";
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  padding-top: 1.5rem;
+}
+.footer__social {
+  display: flex;
+  margin-left: 1rem;
+}
+.footer__social-icon {
+  margin-right: 2rem;
+  height: 2.5rem;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.footer__contact-text {
+  font-family: "AvenirNextLTPro-Regular";
+}
+.footer__contact-text--bold {
+  font-family: "AvenirNextLTPro-Demi";
 }
 
 /* Font Face Links */

@@ -1,0 +1,46 @@
+// Mixins
+@mixin tablet {
+    @media (min-width: 768px) and (max-width: 1279px) {
+        @content;
+    }
+}
+
+// Variables
+
+// SCSS Code
+.footer {
+    background-color: #323232;
+    color: white;
+
+    &__title {
+        font-family: "AvenirNextLTPro-Regular";
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-left: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    &__social {
+        display: flex;
+        margin-left: 1rem;
+    }
+
+    &__social-icon {
+        margin-right: 2rem;
+        height: 2.5rem //40px
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+
+    &__contact-text {
+        font-family: "AvenirNextLTPro-Regular";
+    }
+
+    &__contact-text--bold {
+        font-family: "AvenirNextLTPro-Demi";
+    }
+}
