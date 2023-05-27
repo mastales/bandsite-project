@@ -15,8 +15,16 @@
 
     &__title {
         padding-top: 1.5rem;
-        padding-bottom: 1rem;
+        padding-bottom: 0.125rem;
         margin-left: 1rem;
         
+    }
+
+    &__gallery {
+        margin: 0 1rem 0 1rem;
+    }
+
+    &__gallery-img {
+        height: 54vh;
     }
 }

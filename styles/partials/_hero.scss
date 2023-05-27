@@ -13,13 +13,13 @@
     &__title {
         font-family: "AvenirNextLTPro-Demi";
         color: white;
-        font-size: 2rem;
+        font-size: 3rem;
         position: absolute;
-        bottom: 8rem;
+        bottom: 15rem;
         margin-left: 1rem; 
 
         @include tablet {
-            bottom: 9rem;
+            bottom: 14rem;
             font-size: 3rem;
             margin-left: 2.25rem;
         }
@@ -33,7 +33,7 @@
     &__img--overlay {
         inset: 0;
         position: absolute; 
-        top: 7rem;
+        top: 10.15rem;
         background: rgba(57, 57, 57, 0.5);
      /* center overlay text */
         height: 80vh;

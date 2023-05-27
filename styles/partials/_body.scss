@@ -9,15 +9,16 @@
     margin-left: 1rem;
     margin-right: 1rem;
 
+// Make adjustments to font sizes on Mobile & Tablet
     &__title {
         font-family: 'AvenirNextLTPro-Demi';
-        font-size: 2rem;
+        font-size: 3rem;
         // margin-left: 1rem;
     }
- 
+ //Ask the TA about image sizing as this is causing lots of problems for this project
     &__img {
-        height: 50vh;
-        width: 100vw;
+        max-width: 100%;
+        height: auto;
     }
 
     &__text--bold { 
