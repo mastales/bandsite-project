@@ -13,7 +13,7 @@
     color: white;
 
     &__title {
-        font-family: "AvenirNextLTPro-Regular";
+        font-family: "AvenirNextLTPro-Demi";
         font-weight: 700;
         font-size: 2.5rem;
         margin-left: 1rem;
@@ -26,14 +26,14 @@
     }
 
     &__social-icon {
-        margin-right: 2rem;
+        margin-right: 3rem;
         height: 2.5rem //40px
     }
 
     &__contact {
         display: flex;
         flex-direction: column;
-        margin-left: 1rem;
+        margin: 1.5rem 0rem 0.5rem 1rem;
     }
 
     &__contact-text {
@@ -42,5 +42,12 @@
 
     &__contact-text--bold {
         font-family: "AvenirNextLTPro-Demi";
+    }
+
+    &__contact-title {
+        font-family: "AvenirNextLTPro-Regular";
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        margin-top: 5rem;
     }
 }
