@@ -4,8 +4,8 @@
   width: 100vw;
 }
 .header__title {
-  margin-top: 0;
-  padding-top: 1.5rem;
+  margin: 0;
+  padding: 1.5rem 0 1rem 0;
   color: white;
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-around;
   padding: 10px;
-  margin-bottom: 0;
+  margin: 0;
 }
 .header__list-item {
   list-style: none;
@@ -52,8 +52,10 @@
   }
 }
 .hero__img {
-  height: 80vh;
-  width: 100vw;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .hero__img--overlay {
   inset: 0;
@@ -73,12 +75,14 @@
 }
 
 .body {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 1rem 0 1rem;
+  padding: 0 0 1.5rem 0;
 }
 .body__title {
   font-family: "AvenirNextLTPro-Demi";
   font-size: 3rem;
+  margin: 0;
+  padding: 1.5rem 0 1rem 0;
 }
 .body__img {
   width: 100%;
@@ -88,7 +92,8 @@
 }
 .body__text--bold {
   font-family: "AvenirNextLTPro-Demi";
-  margin-bottom: 1rem;
+  margin: 0;
+  padding: 1rem 0 0 0;
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
@@ -98,14 +103,18 @@
 .body__subtitle {
   font-family: "AvenirNextLTPro-Regular";
   font-size: 1.5rem;
+  margin: 0;
+  padding: 1.5rem 0 1rem 0;
 }
 .body__text {
   font-family: "AvenirNextLTPro-Regular";
   line-height: 1.75rem;
+  margin: 0;
 }
 
 .section {
   background-color: #FAFAFA;
+  padding: 0 0 1rem 0;
 }
 .section__title {
   padding-top: 1.5rem;
@@ -135,12 +144,13 @@
   font-family: "AvenirNextLTPro-Demi";
   font-weight: 700;
   font-size: 2.5rem;
-  margin-left: 1rem;
-  padding-top: 1.5rem;
+  margin: 0 0 0 1rem;
+  padding: 1.5rem 0 1rem 0;
 }
 .footer__social {
   display: flex;
-  margin-left: 1rem;
+  margin: 0 0 0 1rem;
+  padding: 1.5rem 0 1rem 0;
 }
 .footer__social-icon {
   margin-right: 3rem;
@@ -149,19 +159,25 @@
 .footer__contact {
   display: flex;
   flex-direction: column;
-  margin: 1.5rem 0rem 0.5rem 1rem;
+  margin: 1.5rem 0rem 1rem 1rem;
 }
 .footer__contact-text {
   font-family: "AvenirNextLTPro-Regular";
+  margin: 1rem 0 0rem 0;
+  font-size: 1.2rem;
 }
 .footer__contact-text--bold {
   font-family: "AvenirNextLTPro-Demi";
+  font-size: 1.2rem;
 }
 .footer__contact-title {
   font-family: "AvenirNextLTPro-Regular";
   text-transform: uppercase;
   font-size: 2.5rem;
   margin-top: 5rem;
+}
+.footer p {
+  margin: 0 0 0.5rem 0;
 }
 
 /* Font Face Links */
