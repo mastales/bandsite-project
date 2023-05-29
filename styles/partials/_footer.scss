@@ -11,6 +11,7 @@
 .footer {
     background-color: #323232;
     color: white;
+    position: relative;
 
     &__title {
         font-family: "AvenirNextLTPro-Demi";
@@ -57,8 +58,57 @@
 
     &__credits {
         padding: 0 0 2rem 0;
+        @include tablet() {
+            padding: 3.5rem 0 3rem 1rem;
+        }
     }
     p {
         margin: 0 0 0.5rem 0;
     }
+
+    &__contact-container {
+        @include tablet() {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2rem 2.25rem 0 2.25rem;
+        }
+    }
+
+    &__attributes {
+        @include tablet() {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__contact-title {
+        @include tablet() {
+            position: absolute;
+            right: 3.5rem;
+            top: -2rem;
+        }
+    }
+   
+    &__head {
+        @include tablet() {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem 0 0 2.25rem;
+        }
+    }
+
+    &__title {
+        @include tablet { 
+            margin: 0 2rem 0 0.5rem;
+        }
+    }
+
+    // &__social {
+    //     @include tablet() {
+    //         padding: 
+    //     }
+    // }
 }
+
