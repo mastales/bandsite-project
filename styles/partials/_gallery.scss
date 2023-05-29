@@ -19,12 +19,20 @@
         font-family: 'AvenirNextLTPro-Demi';
         font-size: 3rem;
         
+        @include tablet() {
+            margin: 0 0 1rem 2.25rem;
+        }
     }
 
     &__gallery {
         margin: 0 1rem 0 1rem;
         display: flex;
         flex-wrap: wrap;
+
+        @include tablet() {
+            margin: 0 0 0 2.25rem;
+        }
+        
     }
 
     &__gallery-img {
@@ -32,5 +40,10 @@
         height: auto;
         object-fit: cover;
         padding: 0 0 1rem 0;
+
+        @include tablet() {
+            width: 30%;
+            margin: 0 1.25rem 0 0;
+        }
     }
 }
