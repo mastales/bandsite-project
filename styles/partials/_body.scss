@@ -14,8 +14,20 @@
         font-family: 'AvenirNextLTPro-Demi';
         font-size: 3rem;
         margin: 0;
-        padding: 1.5rem 0 1rem 0;
+        padding: 1.5rem 0 1rem 0rem;
+
+        @include tablet() {
+            padding: 1.5rem 0 1rem 1.25rem;
+        }
     }
+
+    &__container {
+        @include tablet {
+            padding: 0 5rem;
+        }
+        
+    }
+
  //Ask the TA about image sizing as this is causing lots of problems for this project
     &__img {
         width: 100%;
@@ -49,5 +61,17 @@
         line-height: 1.75rem;
         margin: 0;
     }
-}
 
+    &__container-text {
+        @include tablet() {
+            display: flex;
+        }
+    }
+
+    &__text--left {
+        @include tablet() {
+            margin: 0 3rem 0 0;
+        }
+        
+    }
+}
