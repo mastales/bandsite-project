@@ -41,7 +41,7 @@
   color: white;
   font-size: 3rem;
   position: absolute;
-  bottom: 15rem;
+  bottom: 13rem;
   margin-left: 1rem;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -81,8 +81,10 @@
   font-size: 3rem;
 }
 .body__img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .body__text--bold {
   font-family: "AvenirNextLTPro-Demi";
@@ -104,19 +106,25 @@
 
 .section {
   background-color: #FAFAFA;
-  font-family: "AvenirNextLTPro-Demi";
-  font-size: 2rem;
 }
 .section__title {
   padding-top: 1.5rem;
   padding-bottom: 0.125rem;
-  margin-left: 1rem;
+  margin: 0 0 1rem 1rem;
+  font-family: "AvenirNextLTPro-Demi";
+  font-size: 3rem;
 }
 .section__gallery {
   margin: 0 1rem 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 .section__gallery-img {
-  height: 54vh;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0 0 1rem 0;
 }
 
 .footer {

@@ -10,21 +10,26 @@
 // SCSS Code
 .section {
     background-color: #FAFAFA;
-    font-family: 'AvenirNextLTPro-Demi';
-    font-size: 2rem;
-
+    
     &__title {
         padding-top: 1.5rem;
         padding-bottom: 0.125rem;
-        margin-left: 1rem;
+        margin: 0 0 1rem 1rem;
+        font-family: 'AvenirNextLTPro-Demi';
+        font-size: 3rem;
         
     }
 
     &__gallery {
         margin: 0 1rem 0 1rem;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     &__gallery-img {
-        height: 54vh;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        padding: 0 0 1rem 0;
     }
 }
