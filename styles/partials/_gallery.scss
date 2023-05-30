@@ -5,6 +5,12 @@
     }
 }
 
+@mixin desktop {
+    @media (min-width: 1280px) and (max-width: 5000px) {
+        @content;
+    }
+}
+
 // Variables
 
 // SCSS Code
@@ -13,9 +19,9 @@
     padding: 0 0 1rem 0;
     
     &__title {
+        padding: 1.5rem 0 2rem 1rem;
         padding-top: 1.5rem;
-        padding-bottom: 0.125rem;
-        margin: 0 0 1rem 1rem;
+        padding-bottom: 1.125rem;
         font-family: 'AvenirNextLTPro-Demi';
         font-size: 3rem;
         
@@ -45,5 +51,30 @@
             width: 30%;
             margin: 0 1.25rem 0 0;
         }
+    }
+}
+
+.section {
+    @include desktop() {
+        padding: 0 0 0 7rem;
+    }
+
+    &__title {
+        @include desktop() {
+            padding: 3rem 0 2rem 0;
+        }
+    }
+
+    &__gallery {
+        @include desktop() {
+            margin: 0 1rem 0 1rem;
+            display: flex;
+            flex-wrap: wrap; 
+        }
+    }
+
+    &__gallery-img {
+        width: 30%;
+        margin: 0 2rem 0 0;
     }
 }
