@@ -45,6 +45,29 @@
   }
 }
 
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0 0 7rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .header__title {
+    font-size: 2.5rem;
+    justify-content: flex-start;
+    margin: 0 0 0 2.25rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .header__list-item {
+    font-size: 1.5rem;
+    margin: 0 0 0 3.5rem;
+  }
+}
+
 .hero {
   display: flex;
   position: relative;
