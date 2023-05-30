@@ -104,6 +104,11 @@
   opacity: 0.5;
   z-index: 1;
 }
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .hero__title {
+    padding: 0 0 0 7rem;
+  }
+}
 
 .body {
   margin: 0 1rem 0 1rem;

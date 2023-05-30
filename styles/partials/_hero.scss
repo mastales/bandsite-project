@@ -5,6 +5,11 @@
     }
 }
 
+@mixin desktop {
+    @media (min-width: 1280px) and (max-width: 5000px) {
+        @content;
+    }
+}
 
 
 .hero {
@@ -43,4 +48,12 @@
         opacity: 0.5;
         z-index: 1;
     }
+
+    &__title {
+        @include desktop() {
+            padding: 0 0 0 7rem;
+        }
+    }
+
+    
 }
