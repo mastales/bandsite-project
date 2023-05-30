@@ -294,6 +294,12 @@
     padding: 3.5rem 0 3rem 1rem;
   }
 }
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .footer__credits {
+    padding: 3.5rem 0 3rem 1rem;
+    display: flex;
+  }
+}
 .footer p {
   margin: 0 0 0.5rem 0;
 }
@@ -306,7 +312,23 @@
     padding: 2rem 2.25rem 0 2.25rem;
   }
 }
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .footer__contact-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3rem 7rem 2rem 7rem;
+  }
+}
 @media (min-width: 768px) and (max-width: 1279px) {
+  .footer__attributes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
   .footer__attributes {
     display: flex;
     flex-direction: column;
@@ -315,8 +337,15 @@
 @media (min-width: 768px) and (max-width: 1279px) {
   .footer__contact-title {
     position: absolute;
-    right: 3.5rem;
+    right: 5rem;
     top: -2rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .footer__contact-title {
+    position: absolute;
+    right: 5rem;
+    top: -1rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -326,9 +355,21 @@
     padding: 1.5rem 0 0 2.25rem;
   }
 }
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .footer__head {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0 0 0rem;
+  }
+}
 @media (min-width: 768px) and (max-width: 1279px) {
   .footer__title {
     margin: 0 2rem 0 0.5rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .footer__title {
+    padding: 3rem 3rem 2rem 7rem;
   }
 }
 
