@@ -16,7 +16,7 @@
 .header {
     background-color: #323232;
     font-family: "AvenirNextLTPro-Regular";
-    width: 100%;
+    width: 100vw;
 
     @include tablet {
         display: flex;
@@ -25,10 +25,11 @@
         justify-content: flex-start;
     }
     
+    //for underlining use padding/margin to create the underline
 
     &__title {
         margin: 0;
-        padding: 1.5rem 0 1.5rem 0;
+        padding: 1.5rem 0 1rem 0;
         color: white;
         display: flex;
         justify-content: center;
@@ -47,18 +48,32 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        padding: 10px;
+        padding: 0;
         margin: 0;
 
     }
 
     &__list-item {
+        font-size: 1.5rem;
         list-style: none;
         color: white;
+        padding: 1rem 6rem 1rem 6rem;
+        
 
         @include tablet {
-            font-size: 1.5rem;
+            font-size: 1rem;
             margin: 0 0 0 3.5rem;
+            padding: 2rem 0rem 2rem 0rem;
+        }
+    }
+
+    &__list-item--active {
+        padding: 1rem 6rem 1rem 6rem;
+        border-bottom: 5px white solid;
+
+        @include tablet() {
+            padding: 2rem 0rem 2rem 0rem;
+            border-bottom: 5px white solid;
         }
     }
 }
@@ -69,14 +84,14 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: flex-start;
-        padding: 0 0 0 7rem;
+        width: 100vw;
    }
 
    &__title {
     @include desktop() {
         font-size: 2.5rem;
         justify-content: flex-start;
-        margin: 0 0 0 2.25rem;
+        margin: 0 0 0 7rem;
     }
    }
 

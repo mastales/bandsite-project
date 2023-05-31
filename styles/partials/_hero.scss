@@ -15,19 +15,25 @@
 .hero {
     display: flex;
     position: relative;
-   
-    &__title { //something is not working here to get the title to appear front
+   //positioning was off.
+   //that's fixed now
+   //next is to style the right positioning for each layout
+   //tablet, mobile and desktop
+    &__title { 
         font-family: "AvenirNextLTPro-Demi";
         color: white;
         font-size: 3rem;
         margin: 0;
         display: flex;
+        position: absolute;
+        top: 8rem;
         align-self: flex-end;
         margin-left: 1rem;
         z-index: 100;
       
         @include tablet {
           margin-left: 2.25rem;
+          top: 13rem;
         }
     }
 
@@ -55,5 +61,5 @@
         }
     }
 
-    
+
 }
