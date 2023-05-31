@@ -53,6 +53,14 @@
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .header__list-item--active {
+    font-size: 1rem;
+    padding: 2rem 0rem 2rem 0rem;
+    border-bottom: 5px white solid;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .header__list-item--active {
+    font-size: 1rem;
     padding: 2rem 0rem 2rem 0rem;
     border-bottom: 5px white solid;
   }
@@ -76,8 +84,9 @@
 }
 @media (min-width: 1280px) and (max-width: 5000px) {
   .header__list-item {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 0 0 0 3.5rem;
+    padding: 2rem 0rem 2rem 0rem;
   }
 }
 
@@ -92,15 +101,19 @@
   margin: 0;
   display: flex;
   position: absolute;
-  top: 8rem;
+  top: 9.5rem;
   align-self: flex-end;
-  margin-left: 1rem;
   z-index: 100;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .hero__title {
     margin-left: 2.25rem;
-    top: 13rem;
+    top: 15rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .hero__title {
+    top: 23rem;
   }
 }
 .hero__img {
@@ -127,7 +140,7 @@
 }
 
 .body {
-  padding: 3rem 1rem 2rem 1rem;
+  padding: 0rem 1rem 2rem 1rem;
 }
 .body__title {
   font-family: "AvenirNextLTPro-Demi";
@@ -182,10 +195,15 @@
     margin: 0 3rem 0 0;
   }
 }
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .body__text--left {
+    margin: 0 3rem 0 0;
+  }
+}
 
 @media (min-width: 1280px) and (max-width: 5000px) {
   .body {
-    padding: 3rem 7rem 2rem 7rem;
+    padding: 0rem 7rem 2rem 7rem;
   }
 }
 @media (min-width: 1280px) and (max-width: 5000px) {
@@ -235,7 +253,7 @@
 @media (min-width: 768px) and (max-width: 1279px) {
   .section__gallery-img {
     width: 30%;
-    margin: 0 1.25rem 0 0;
+    margin: 0 1rem 0 0;
   }
 }
 
@@ -256,9 +274,15 @@
     flex-wrap: wrap;
   }
 }
-.section__gallery-img {
-  width: 30%;
-  margin: 0 2rem 0 0;
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .section__gallery-img {
+    width: 30%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 0 0 1rem 0;
+    margin: 0 1rem 0 0;
+  }
 }
 
 .footer {

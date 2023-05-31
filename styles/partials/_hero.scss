@@ -26,14 +26,17 @@
         margin: 0;
         display: flex;
         position: absolute;
-        top: 8rem;
+        top: 9.5rem;
         align-self: flex-end;
-        margin-left: 1rem;
         z-index: 100;
       
         @include tablet {
           margin-left: 2.25rem;
-          top: 13rem;
+          top: 15rem;
+        }
+
+        @include desktop() {
+            top: 23rem;
         }
     }
 

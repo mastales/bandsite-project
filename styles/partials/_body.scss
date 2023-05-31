@@ -13,7 +13,7 @@
 
 // Code for SCSS
 .body {
-    padding: 3rem 1rem 2rem 1rem;
+    padding: 0rem 1rem 2rem 1rem;
    
 
 // Make adjustments to font sizes on Mobile & Tablet
@@ -78,13 +78,17 @@
         @include tablet() {
             margin: 0 3rem 0 0;
         }
+
+        @include desktop() {
+            margin: 0 3rem 0 0;
+        }
         
     }
 }
 
 .body {
     @include desktop() {
-        padding: 3rem 7rem 2rem 7rem; 
+        padding: 0rem 7rem 2rem 7rem; 
     }
 
     &__container {
