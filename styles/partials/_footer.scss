@@ -61,6 +61,10 @@
         margin-top: 5rem;
     }
 
+    &__attributes {
+        margin: 0 0 0 1rem;
+    }
+
     &__credits {
         padding: 0 0 2rem 0;
         @include tablet() {
@@ -99,11 +103,13 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+            margin: 0;
         }
 
         @include desktop() {
             display: flex;
             flex-direction: column;
+            margin: 0;
         }
     }
 
