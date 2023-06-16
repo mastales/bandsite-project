@@ -494,6 +494,43 @@
   border: none;
 }
 
+.comment__card {
+  display: flex;
+}
+.comment__card-img {
+  height: 2.5rem;
+  padding: 0;
+}
+.comment__card-title {
+  margin: 0;
+  font-family: "AvenirNextLTPro-Demi";
+  color: #323232;
+}
+.comment__card-date {
+  margin: 0;
+  font-size: 1rem;
+  color: #AFAFAF;
+}
+.comment__div--left {
+  display: flex;
+  padding-right: 1rem;
+}
+.comment__div--right {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+.comment__div--middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.divider {
+  border-top: solid 1px #E1E1E1;
+  margin: 2rem 1rem 1rem 0rem;
+}
+
 /* Font Face Links */
 @font-face {
   font-family: "AvenirNextLTPro-Regular";
