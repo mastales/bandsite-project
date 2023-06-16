@@ -37,6 +37,7 @@
 .header__list-item {
   font-size: 1.5rem;
   list-style: none;
+  text-decoration: inherit;
   color: white;
   padding: 1rem 6rem 1rem 6rem;
 }
@@ -64,6 +65,10 @@
     padding: 2rem 0rem 2rem 0rem;
     border-bottom: 5px white solid;
   }
+}
+.header a {
+  text-decoration: none;
+  color: white;
 }
 
 @media (min-width: 1280px) and (max-width: 5000px) {
@@ -223,9 +228,7 @@
   padding: 0 0 1rem 0;
 }
 .section__title {
-  padding: 1.5rem 0 2rem 1rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.125rem;
+  padding: 1.5rem 0 1.125rem 1rem;
   font-family: "AvenirNextLTPro-Demi";
   font-size: 3rem;
 }
@@ -417,6 +420,78 @@
   .footer__title {
     padding: 3rem 3rem 2rem 7rem;
   }
+}
+
+.info {
+  margin: 0;
+  font-family: "AvenirNextLTPro-Regular";
+  padding: 0 0 0 1rem;
+}
+.info__title {
+  margin: 0;
+  padding: 1.5rem 0 1.125rem 0rem;
+  font-family: "AvenirNextLTPro-Demi";
+  font-size: 3rem;
+}
+.info__ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.info__img {
+  height: 2.5rem;
+  padding: 1rem 0 0 0;
+}
+.info__div--left {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem 0 0;
+}
+.info__div--right {
+  display: flex;
+  flex-direction: column;
+}
+.info__name {
+  text-transform: uppercase;
+  padding: 0 0 0.25rem 0;
+  font-family: "AvenirNextLTPro-Demi";
+  font-size: 0.85rem;
+  color: #AFAFAF;
+}
+.info__name-form {
+  height: 2rem;
+  width: 77vw;
+  margin: 0 0 1.5rem 0;
+  border: solid 1.5px #E1E1E1;
+  border-radius: 4px;
+  background-color: #FAFAFA;
+}
+.info__text {
+  text-transform: uppercase;
+  padding: 0 0 0.25rem 0;
+  font-family: "AvenirNextLTPro-Demi";
+  font-size: 0.85rem;
+  color: #AFAFAF;
+}
+.info__text-form {
+  height: 5rem;
+  border: solid 1.5px #E1E1E1;
+  border-radius: 4px;
+  background-color: #FAFAFA;
+}
+.info__button {
+  height: auto;
+  width: 9.375rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #323232;
+  font-family: "AvenirNextLTPro-Demi";
+  color: white;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
 }
 
 /* Font Face Links */
