@@ -425,13 +425,13 @@
 .info {
   margin: 0;
   font-family: "AvenirNextLTPro-Regular";
-  padding: 0 0 0 1rem;
+  padding: 0 1rem 0 1rem;
 }
 .info__title {
   margin: 0;
   padding: 1.5rem 0 1.125rem 0rem;
   font-family: "AvenirNextLTPro-Demi";
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .info__ul {
   list-style: none;
@@ -462,7 +462,7 @@
 }
 .info__name-form {
   height: 2rem;
-  width: 77vw;
+  width: 75vw;
   margin: 0 0 1.5rem 0;
   border: solid 1.5px #E1E1E1;
   border-radius: 4px;
@@ -524,11 +524,15 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  padding: 0 0 1rem 0rem;
+}
+.comment__div--bottom p {
+  margin: 0;
 }
 
 .divider {
   border-top: solid 1px #E1E1E1;
-  margin: 2rem 1rem 1rem 0rem;
+  margin: 1rem 0rem 1rem 0rem;
 }
 
 /* Font Face Links */

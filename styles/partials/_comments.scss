@@ -11,19 +11,38 @@
     }
 }
 
+@mixin button {
+    height: auto;
+    width: 9.375rem; //150px
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #323232;
+    font-family: 'AvenirNextLTPro-Demi';
+    color: white;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: none;
+    @content;
+}
+
+@mixin divider {
+    border-top: solid 1px #E1E1E1;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
 //Code
 //Comment Add Area
 .info {
     margin: 0;
     font-family: "AvenirNextLTPro-Regular";
-    padding: 0 0 0 1rem;
+    padding: 0 1rem 0 1rem;
     
 
     &__title {
         margin:0;
         padding: 1.5rem 0 1.125rem 0rem;
         font-family: 'AvenirNextLTPro-Demi';
-        font-size: 3rem; 
+        font-size: 2rem; 
     }
 
     &__ul {
@@ -60,7 +79,7 @@
 
     &__name-form {
         height: 2rem;
-        width: 77vw;
+        width: 75vw;
         margin:0 0 1.5rem 0;
         border: solid 1.5px #E1E1E1;
         border-radius: 4px;
@@ -135,13 +154,18 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        padding: 0 0 1rem 0rem;
     }
-
-
     
+    &__div--bottom {
+
+        p {
+            margin: 0;
+        }
+    }
 }
 
-.divider{
+.divider {
     border-top: solid 1px #E1E1E1;
-    margin: 2rem 1rem 1rem 0rem;
+    margin: 1rem 0rem 1rem 0rem;
 }
