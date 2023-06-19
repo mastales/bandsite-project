@@ -442,7 +442,8 @@
 }
 .info__img {
   height: 2.5rem;
-  padding: 1rem 0 0 0;
+  margin: 1rem 0 0 0;
+  border-radius: 50%;
 }
 .info__div--left {
   display: flex;
@@ -500,6 +501,7 @@
 .comment__card-img {
   height: 2.5rem;
   padding: 0;
+  border-radius: 50%;
 }
 .comment__card-title {
   margin: 0;
@@ -533,6 +535,20 @@
 .divider {
   border-top: solid 1px #E1E1E1;
   margin: 1rem 0rem 1rem 0rem;
+}
+
+.comment__card-img:-moz-placeholder-shown {
+  height: 2.5rem;
+  background-color: #E1E1E1;
+  border: none;
+  border-radius: 50%;
+}
+
+.comment__card-img:placeholder-shown {
+  height: 2.5rem;
+  background-color: #E1E1E1;
+  border: none;
+  border-radius: 50%;
 }
 
 /* Font Face Links */
