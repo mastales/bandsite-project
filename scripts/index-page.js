@@ -96,7 +96,23 @@ const formSubmission = () => {
 
     let currentDate = getCurrentDate();
 
-    addCommentToArray(userCommentName, currentDate, userCommentText);
+    //ERROR SCRIPTING
+    /**
+     * The issue here is that it is applying the error styling regardless of rules
+     * It also continues to post to the array despite being an error
+     */
+    const formError = document.querySelectorAll('.data-comment');
+    formError.forEach(field => field.classList.add('info__name-form--error'));
+
+    if (!userCommentName || !userCommentText) {
+        console.log("rejected");
+        formError.forEach(field => {
+            field.classList.add('info__name-form--error');
+        });
+    } else {
+        console.log("submitted");
+        addCommentToArray(userCommentName, currentDate, userCommentText);
+    }
 
     //Creates visual components of the comment DISPLAY
     let commentCard = document.createElement("div");

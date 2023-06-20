@@ -470,7 +470,9 @@
   margin: 0 0 1.5rem 0;
   border: solid 1.5px #E1E1E1;
   border-radius: 4px;
-  background-color: #FAFAFA;
+  background-color: white;
+  font-family: "AvenirNextLTPro-Regular";
+  padding: 0.5rem;
 }
 .info__text {
   text-transform: uppercase;
@@ -483,7 +485,9 @@
   height: 5rem;
   border: solid 1.5px #E1E1E1;
   border-radius: 4px;
-  background-color: #FAFAFA;
+  background-color: white;
+  font-family: "AvenirNextLTPro-Regular";
+  padding: 0.5rem;
 }
 .info__button {
   height: auto;
@@ -496,6 +500,17 @@
   text-transform: uppercase;
   border-radius: 4px;
   border: none;
+}
+.info__name-form--error {
+  border: solid 2px #D22D2D;
+}
+
+.info__name-form--error::-moz-placeholder {
+  color: transparent;
+}
+
+.info__name-form--error::placeholder {
+  color: transparent;
 }
 
 .comment__card {
