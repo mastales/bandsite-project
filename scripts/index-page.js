@@ -17,46 +17,75 @@ commentsArr = [
     }
 ];
 
-const submission = document.querySelector(".info__info");
-submission.addEventListener("submit", function(e) {
-    e.preventDefault();
+const addCommentToArray = (name, date, comment) => {
+    commentsArr.push({
+      name: name,
+      date: date,
+      comment: comment
+    });
+  };
 
-    const name = e.target.commentName.value;
-    const date = e.target.commentDate.value;
-    const comment = e.target.comment.value;
-    console.log(e.target.commentName.value);
+  const displayComments = () => {
+    const commentContainer = document.querySelector(".comment");
+  
+    commentsArr.forEach(comment => {
+      let commentCard = document.createElement("div");
+      commentCard.classList.add('comment_card');
+  
+      let commentDivLeft = document.createElement("div");
+      commentDivLeft.classList.add('comment__div--left');
+  
+      let commentImg = document.createElement("img");
+      commentImg.classList.add('comment__card-img');
+      commentImg.src = "./assets/images/comment_placeholder_img.png";
+  
+      let commentDivRight = document.createElement("div");
+      commentDivRight.classList.add('comment__div--right');
+  
+      let commentDivMid = document.createElement("div");
+      commentDivMid.classList.add('comment__div--middle');
+  
+      let commentCardName = document.createElement("h3");
+      commentCardName.classList.add('comment__card-name');
+      commentCardName.innerHTML = comment.name;
+  
+      let commentCardDate = document.createElement("h4");
+      commentCardDate.classList.add('comment__card-date');
+      commentCardDate.innerHTML = comment.date;
+  
+      let commentDivBtm = document.createElement("div");
+      commentDivBtm.classList.add('comment__div--bottom');
+  
+      let commentDvd = document.createElement("hr");
+      commentDvd.classList.add('divider');
+  
+      let commentText = document.createElement("p");
+      commentText.classList.add('comment__text');
+      commentText.innerHTML = comment.comment;
+  
+      commentCard.appendChild(commentDivLeft);
+      commentCard.appendChild(commentDivRight);
+      
+      commentDivLeft.appendChild(commentImg);
+  
+      commentDivRight.appendChild(commentDivMid);
+      commentDivRight.appendChild(commentDivBtm);
+  
+      commentDivMid.appendChild(commentCardName);
+      commentDivMid.appendChild(commentCardDate);
+  
+      commentDivBtm.appendChild(commentText);
+  
+      commentCard.appendChild(commentDvd);
+  
+      commentContainer.appendChild(commentCard);
+    });
+  };
+  //function to display comments on page load
+  displayComments();
 
-    //error message can go here
-    const errorMessage = document.querySelector(".form__error");
-    console.log(e.target);
-
-    if (!comment || !name) {
-        console.log("rejected");
-        errorMessage.classList.add("info__error--incomplete");
-    }
-    else {
-        console.log("submitted");
-        commentsList.innerText = "";
-        const newCommentObject = {
-            name: name,
-            comment: comment,
-            date: date,
-        }; 
-        e.target.comment.value = "";
-        e.target.commentName.value = "";
-        e.target.commentDate.value = "";
-
-        commentsArr.unshift(newCommentObject);
-        console.log(newCommentObject);
-        displayComment(commentsArr);
-    }
-    
-});
-
-
-
-//from event listener "onclick" invoke a function to create post
-const createComment = () => {
+//HANDLE FORM SUBMISSION
+const formSubmission = () => {
 
     //Get the post text 
     let userCommentText = document.querySelector('.data-comment-text').value;
@@ -64,6 +93,10 @@ const createComment = () => {
 
     let userCommentName = document.querySelector('.data-comment-name').value;
     console.log(userCommentName);
+
+    let currentDate = getCurrentDate();
+
+    addCommentToArray(userCommentName, currentDate, userCommentText);
 
     //Creates visual components of the comment DISPLAY
     let commentCard = document.createElement("div");
@@ -89,15 +122,7 @@ const createComment = () => {
     //Code to create date and add it to the comment
     let commentCardDate = document.createElement("h4");
     commentCardDate.classList.add('comment__card-date');
-    commentCardDate.innerHTML = userDate();
-    
-    function userDate() {
-        const d = new Date("June 27, 2023 01:15:00");
-        let month = d.getMonth();
-        let day = d.getDate();
-        let year = d.getFullYear();
-        return (month + 1) + "/" + day + "/" + year;
-    }
+    commentCardDate.innerHTML = getCurrentDate();
 
     let commentDivBtm = document.createElement("div");
     commentDivBtm.classList.add('comment__div--bottom');
@@ -132,9 +157,29 @@ const createComment = () => {
     commentCard.appendChild(commentDvd);
 
     //append to comment parent
-    document.querySelector(".comment").appendChild(commentCard);
+    document.querySelector(".comment").prepend(commentCard);
+    
+    clearAllInputs();
 }
 
+//CODE HOLDING AREA 
+function getCurrentDate() {
+    const currentDate = new Date();
+    let month = currentDate.getMonth() + 1;
+    let day = currentDate.getDate();
+    let year = currentDate.getFullYear();
+    return month + "/" + day + "/" + year;
+  }
+  
+function clearAllInputs(event) {
+    const allInputs = document.querySelectorAll('input');
+    allInputs.forEach(singleInput => singleInput.value = '');
+  }
+ 
 const commentButton = document.querySelector(".info__button");
-commentButton.addEventListener("click", createComment);
+commentButton.addEventListener("click", function(e){
+    e.preventDefault();
+    formSubmission();
+});
+
 
