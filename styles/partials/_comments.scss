@@ -37,6 +37,9 @@
     font-family: "AvenirNextLTPro-Regular";
     padding: 0 1rem 0 1rem;
     
+    &__date {
+        display: none;
+    }
 
     &__title {
         margin:0;

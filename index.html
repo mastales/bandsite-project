@@ -89,20 +89,23 @@
 
     <!-- Comments Section  -->
     <section class="info">
-        <h1 class="info__title">Join the Conversation</h1>
-        <ul class="info__ul">
-            <div class="info__div--left">
-                <img class="info__img" src="./assets/images/Mohan-muruge.jpg">
-            </div>
-            <div class="info__div--right">
-                <li class="info__name">Name</li>
-                <input class="info__name-form data-comment-name" type="name" placeholder="Enter Your Name">
-                <li class="info__text">Comment</li>
-                <input class="info__text-form data-comment-text" type="text" placeholder="Add New Comment"><br>
-                <button class="info__button">Comment</button>
-            </div>
-        </ul>
-        <hr class="divider">
+        <div class="info__info">
+            <h1 class="info__title">Join the Conversation</h1>
+            <ul class="info__ul">
+                <div class="info__div--left">
+                    <img class="info__img" src="./assets/images/Mohan-muruge.jpg">
+                </div>
+                <div class="info__div--right">
+                    <li class="info__name">Name</li>
+                    <input class="info__date" name="commentDate" type="name">
+                    <input class="info__name-form data-comment-name" name="commentName" type="name" placeholder="Enter Your Name">
+                    <li class="info__text">Comment</li>
+                    <textarea class="info__text-form data-comment-text" name="comment" type="text" placeholder="Add New Comment"></textarea><br>
+                    <button class="info__button">Comment</button>
+                </div>
+            </ul>
+            <hr class="divider">
+        </div>
 
         <!-- COMMENT DISPLAY SECTION -->
         <div class="comment">
