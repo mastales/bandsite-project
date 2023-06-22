@@ -66,7 +66,7 @@
     &__div--left {
         display: flex;
         flex-direction: column;
-        padding: 0 2rem 0 0 
+        padding: 0 1rem 0 0 
     }
 
     &__div--right {
@@ -111,6 +111,8 @@
     }
 
     &__button {
+        display: flex;
+        justify-content: center;
         height: auto;
         width: 9.375rem; //150px
         padding: 0.75rem;
@@ -126,7 +128,51 @@
     &__name-form--error {
         border: solid 2px #D22D2D;
     }
+
 }
+
+.info {
+
+    &__ul {
+        @include tablet(){
+            padding: 0 5rem;
+        }
+
+        @include desktop() {
+            padding: 0 25rem;
+        }
+    }
+
+    &__button-container {
+        @include tablet() {
+            display: flex;
+            justify-content: right;
+        }
+
+        @include desktop() {
+            display: flex;
+            justify-content: right;
+        }
+    }
+
+    &__name-form {
+        @include tablet() {
+            width: 70vw;
+        }
+
+        @include desktop() {
+            width: 33vw;
+        }
+    }
+
+    &__title { 
+        @include desktop() {
+            padding: 2rem 0 2rem 7rem;
+            font-size: 3rem;
+        }
+    }
+}
+
 
 .info__name-form--error::placeholder{
     color: transparent;
@@ -137,6 +183,7 @@
 
     &__card {
         display: flex;
+        padding: 1rem 0;
     }
 
     &__card-img {
@@ -179,7 +226,18 @@
 
         p {
             margin: 0;
+            line-height: 1.75rem;
         }
+    }
+}
+
+.comment {
+    @include tablet(){
+        padding: 0 5rem;
+    }
+
+    @include desktop(){
+        padding: 0 25rem;
     }
 }
 

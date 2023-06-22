@@ -451,7 +451,7 @@
 .info__div--left {
   display: flex;
   flex-direction: column;
-  padding: 0 2rem 0 0;
+  padding: 0 1rem 0 0;
 }
 .info__div--right {
   display: flex;
@@ -490,6 +490,8 @@
   padding: 0.5rem;
 }
 .info__button {
+  display: flex;
+  justify-content: center;
   height: auto;
   width: 9.375rem;
   padding: 0.75rem;
@@ -505,6 +507,45 @@
   border: solid 2px #D22D2D;
 }
 
+@media (min-width: 768px) and (max-width: 1279px) {
+  .info__ul {
+    padding: 0 5rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .info__ul {
+    padding: 0 25rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .info__button-container {
+    display: flex;
+    justify-content: right;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .info__button-container {
+    display: flex;
+    justify-content: right;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .info__name-form {
+    width: 70vw;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .info__name-form {
+    width: 33vw;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .info__title {
+    padding: 2rem 0 2rem 7rem;
+    font-size: 3rem;
+  }
+}
+
 .info__name-form--error::-moz-placeholder {
   color: transparent;
 }
@@ -515,6 +556,7 @@
 
 .comment__card {
   display: flex;
+  padding: 1rem 0;
 }
 .comment__card-img {
   height: 2.5rem;
@@ -548,6 +590,18 @@
 }
 .comment__div--bottom p {
   margin: 0;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .comment {
+    padding: 0 5rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .comment {
+    padding: 0 25rem;
+  }
 }
 
 .divider {

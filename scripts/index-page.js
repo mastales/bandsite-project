@@ -30,7 +30,7 @@ const addCommentToArray = (name, date, comment) => {
   
     commentsArr.forEach(comment => {
       let commentCard = document.createElement("div");
-      commentCard.classList.add('comment_card');
+      commentCard.classList.add('comment__card');
   
       let commentDivLeft = document.createElement("div");
       commentDivLeft.classList.add('comment__div--left');
@@ -76,8 +76,7 @@ const addCommentToArray = (name, date, comment) => {
   
       commentDivBtm.appendChild(commentText);
   
-      commentCard.appendChild(commentDvd);
-  
+      document.querySelector(".comment").appendChild(commentDvd);
       commentContainer.appendChild(commentCard);
     });
   };
@@ -102,7 +101,6 @@ const formSubmission = () => {
      * It also continues to post to the array despite being an error
      */
     const formError = document.querySelectorAll('.data-comment');
-    formError.forEach(field => field.classList.add('info__name-form--error'));
 
     if (!userCommentName || !userCommentText) {
         console.log("rejected");
@@ -116,7 +114,7 @@ const formSubmission = () => {
 
     //Creates visual components of the comment DISPLAY
     let commentCard = document.createElement("div");
-    commentCard.classList.add('comment_card');
+    commentCard.classList.add('comment__card');
 
     let commentDivLeft = document.createElement("div");
     commentDivLeft.classList.add('comment__div--left');
