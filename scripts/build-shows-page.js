@@ -44,6 +44,32 @@ console.table(showsArr);
 displayShows = () => {
     const showsContainer = document.querySelector(".shows"); 
 
+    // Create the table titles elements
+        let showsHeader = document.createElement("div");
+        showsHeader.classList.add('shows__card-header');
+    
+        let showsTbTitleDate = document.createElement("h3");
+        showsTbTitleDate.classList.add('shows__card-title--tb');
+        showsTbTitleDate.innerHTML = "Date";
+
+        let showsTbTitleVenue = document.createElement("h3");
+        showsTbTitleVenue.classList.add('shows__card-title--tb');
+        showsTbTitleVenue.innerHTML = "Venue";
+
+        let showsTbTitleLoc = document.createElement("h3");
+        showsTbTitleLoc.classList.add('shows__card-title--tb');
+        showsTbTitleLoc.innerHTML = "Location";
+
+        let showsTbBlank = document.createElement("h3");
+        showsTbBlank.classList.add('shows__card-title--tb');
+
+        // Append table titles to showsContainer
+        showsContainer.appendChild(showsHeader);
+        showsHeader.appendChild(showsTbTitleDate);
+        showsHeader.appendChild(showsTbTitleVenue);
+        showsHeader.appendChild(showsTbTitleLoc);
+        showsHeader.appendChild(showsTbBlank);
+
     showsArr.forEach(show => {
         //Shows Card and List (Parents)
         let showsCard = document.createElement("div");
@@ -64,19 +90,6 @@ displayShows = () => {
 
         let showsBtnCtn = document.createElement("div");
         showsBtnCtn.classList.add('shows__card-button--ctn');
-
-        //Table Titles
-        let showsTbTitleDate = document.createElement("h3");
-        showsTbTitleDate.classList.add('shows__card-title--tb');
-        showsTbTitleDate.innerHTML = "Date";
-
-        let showsTbTitleVenue = document.createElement("h3");
-        showsTbTitleVenue.classList.add('shows__card-title--tb')
-        showsTbTitleVenue.innerHTML = "Venue";
-
-        let showsTbTitleLoc = document.createElement("h3");
-        showsTbTitleLoc.classList.add('shows__card-title--tb')
-        showsTbTitleLoc.innerHTML = "Location";
 
         //Venue, Date, Location
         let showsVenue = document.createElement("h3");
@@ -127,17 +140,14 @@ displayShows = () => {
         showsList.appendChild(showsBtnCtn);
 
         //append to date container
-        showsDateCtn.appendChild(showsTbTitleDate);
         showsDateCtn.appendChild(showsDate);
         showsDateCtn.appendChild(showsDateInfo);
 
         //append to venue container
-        showsVenueCtn.appendChild(showsTbTitleVenue);
         showsVenueCtn.appendChild(showsVenue);
         showsVenueCtn.appendChild(showsVenueInfo);
 
         //append to location container
-        showsLocCtn.appendChild(showsTbTitleLoc);
         showsLocCtn.appendChild(showsLocation);
         showsLocCtn.appendChild(showsLocationInfo);
 
