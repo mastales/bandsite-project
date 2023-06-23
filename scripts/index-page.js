@@ -76,7 +76,7 @@ const addCommentToArray = (name, date, comment) => {
   
       commentDivBtm.appendChild(commentText);
   
-      document.querySelector(".comment").appendChild(commentDvd);
+      commentContainer.appendChild(commentDvd);
       commentContainer.appendChild(commentCard);
     });
   };
@@ -168,9 +168,10 @@ const formSubmission = () => {
     commentDivBtm.appendChild(commentText);
 
     //append divider to bottom of comment card
-    commentCard.appendChild(commentDvd);
+    // commentCard.appendChild(commentDvd);
 
     //append to comment parent
+    // document.querySelector(".comment").appendChild(commentDvd);
     document.querySelector(".comment").prepend(commentCard);
     
     clearAllInputs();

@@ -97,6 +97,12 @@
         margin: 2rem 0 0 0;
     }
 
+    &__card-list {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1.5rem;
+    }
+
     &__card-title {
         text-transform: uppercase;
         margin: 0;
@@ -108,11 +114,121 @@
 
     &__card-text {
         margin: 0;
+    
     }
 
     &__card-text--bold {
         margin: 0;
         font-family: 'AvenirNextLTPro-Regular';
+    }
+
+    &__card-header {
+        display: none;
+    }
+
+    &__card-title--tb {
+        display: none;
+        margin: 0 0 2rem 0;
+        text-transform: uppercase;
+        padding: 1.5rem 0 0.5rem 0;
+        font-family: 'AvenirNextLTPro-Demi';
+        font-size: 0.85rem;
+        color: #AFAFAF;
+    }
+
+// CONTAINERS FOR SHOWS INFO
+    &__card-date--ctn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card-venue--ctn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card-location--ctn {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+// MEDIA QUERIES
+.shows {
+
+    @include tablet() {
+        padding: 0 2.5rem 2rem 2.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include desktop() {
+        padding: 0 2.5rem 2rem 2.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title { 
+        @include desktop() { 
+            padding: 1.5rem 0 0 5rem;
+            display: flex;
+            flex-direction: column;
+        }  
+    }
+
+    &__button { 
+        @include tablet() {
+            width: 100%;
+            margin: 0;
+            padding: 0.75rem 3rem;
+            align-items: center;
+        }
+    }
+
+    &__card-header{
+        @include tablet() {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+
+    &__card-title--hide { 
+        @include tablet() {
+            display: none;
+        }
+
+        @include desktop() {
+            display: none;
+        }
+    }
+
+    &__card-title--tb {
+        @include tablet() {
+            display: block;
+        }
+
+        @include desktop() {
+            display: block;
+        }
+    }
+
+    &__card-list {
+        @include tablet() {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 0 0 2rem 0;
+        }
+
+        @include desktop() {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 0 5rem 2rem 20rem;
+        }
     }
 }
 

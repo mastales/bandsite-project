@@ -34,16 +34,34 @@
     <div class="shows">
         <h1 class="shows__title">Shows</h1>
 <!-- Shows Card -->
-        <!-- <div class="shows__card">
-            <h3 class="shows__card-title">Date</h3>
-            <h4 class="shows__card-text--bold">Mon Sept 06 2021</h4>
-            <h3 class="shows__card-title">Venue</h3>
-            <h4 class="shows__card-text">Ronald Lane</h4>
-            <h3 class="shows__card-title">Location</h3>
-            <h4 class="shows__card-text">San Francisco, CA</h4>
-            <button class="shows__button">Buy Tickets</button>
+        
+        <div class="shows__card">
+            <!-- Dont forget to update teh JS as well to append differently -->
+            <div class="shows__card-list">
+                <div class="shows__card-date--ctn">
+                    <h3 class="shows__card-title--tb">Date</h3>
+                    <h3 class="shows__card-title shows__card-title--hide">Date</h3>
+                    <h4 class="shows__card-text">Mon Sept 06 2021</h4>
+                </div>  
+                <div class="shows__card-venue--ctn">
+                    <h3 class="shows__card-title--tb">Venue</h3>
+                    <h3 class="shows__card-title shows__card-title--hide">Venue</h3>
+                    <h4 class="shows__card-text">Ronald Lane</h4>
+                </div>
+                <div class="shows__card-location--ctn">
+                    <h3 class="shows__card-title--tb">Location</h3>
+                    <h3 class="shows__card-title shows__card-title--hide">Location</h3>
+                    <h4 class="shows__card-text">San Francisco, CA</h4>
+                </div>
+                <div> 
+                    <!-- <h3 class="shows__card-title--tb"></h3> -->
+                    <button class="shows__button">Buy Tickets</button>
+                </div>
+                
+            </div>
+            <!-- <hr class="divider"> -->
         </div>
-        <hr class="divider"> -->
+        
     </div>
 
 
@@ -106,6 +124,6 @@
                 </div>
             </div>
     </footer>
-    <script src="/scripts/build-shows-page.js"></script> 
+    <!-- <script src="/scripts/build-shows-page.js"></script>  -->
     </body>
     </html>

@@ -50,6 +50,7 @@ displayShows = () => {
 
         let showsTitle = document.createElement("h3");
         showsTitle.classList.add('shows__card-title');
+        showsTitle.classList.add('shows__card-title--hide');
         showsTitle.innerHTML = "Date"
 
         let showsTextBold = document.createElement("h4");
@@ -58,6 +59,7 @@ displayShows = () => {
 
         let showsVenue = document.createElement("h3");
         showsVenue.classList.add('shows__card-title');
+        showsVenue.classList.add('shows__card-title--hide');
         showsVenue.innerHTML = "Venue";
 
         let showsVenueInfo = document.createElement("h4");
@@ -66,6 +68,7 @@ displayShows = () => {
 
         let showsLocation = document.createElement("h3");
         showsLocation.classList.add('shows__card-title');
+        showsLocation.classList.add('shows__card-title--hide');
         showsLocation.innerHTML = "Location";
 
         let showsLocationInfo = document.createElement("h4");
@@ -87,7 +90,7 @@ displayShows = () => {
         showsCard.appendChild(showsLocation);
         showsCard.appendChild(showsLocationInfo);
         showsCard.appendChild(showsBuyButton)
-        showsCard.appendChild(showsDvd);
+        document.querySelector(".shows").append(showsDvd);
 
         document.querySelector(".shows").append(showsCard);
         });

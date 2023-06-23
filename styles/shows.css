@@ -296,6 +296,11 @@
   width: 100%;
   margin: 2rem 0 0 0;
 }
+.shows__card-list {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
 .shows__card-title {
   text-transform: uppercase;
   margin: 0;
@@ -310,6 +315,104 @@
 .shows__card-text--bold {
   margin: 0;
   font-family: "AvenirNextLTPro-Regular";
+}
+.shows__card-header {
+  display: none;
+}
+.shows__card-title--tb {
+  display: none;
+  margin: 0 0 2rem 0;
+  text-transform: uppercase;
+  padding: 1.5rem 0 0.5rem 0;
+  font-family: "AvenirNextLTPro-Demi";
+  font-size: 0.85rem;
+  color: #AFAFAF;
+}
+.shows__card-date--ctn {
+  display: flex;
+  flex-direction: column;
+}
+.shows__card-venue--ctn {
+  display: flex;
+  flex-direction: column;
+}
+.shows__card-location--ctn {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .shows {
+    padding: 0 2.5rem 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .shows {
+    padding: 0 2.5rem 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .shows__title {
+    padding: 1.5rem 0 0 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .shows__button {
+    width: 100%;
+    margin: 0;
+    padding: 0.75rem 3rem;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .shows__card-header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .shows__card-title--hide {
+    display: none;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .shows__card-title--hide {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .shows__card-title--tb {
+    display: block;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .shows__card-title--tb {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .shows__card-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 0 2rem 0;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .shows__card-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 5rem 2rem 20rem;
+  }
 }
 
 .divider {
