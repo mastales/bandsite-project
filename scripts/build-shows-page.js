@@ -45,18 +45,40 @@ displayShows = () => {
     const showsContainer = document.querySelector(".shows"); 
 
     showsArr.forEach(show => {
+        //Shows Card and List (Parents)
         let showsCard = document.createElement("div");
         showsCard.classList.add('shows__card');
 
-        let showsTitle = document.createElement("h3");
-        showsTitle.classList.add('shows__card-title');
-        showsTitle.classList.add('shows__card-title--hide');
-        showsTitle.innerHTML = "Date"
+        let showsList = document.createElement("div");
+        showsList.classList.add('shows__card-list')
 
-        let showsTextBold = document.createElement("h4");
-        showsTextBold.classList.add('shows__card-text');
-        showsTextBold.textContent = show.date
+        //Containers for title & list elements (Children)
+        let showsDateCtn = document.createElement("div");
+        showsDateCtn.classList.add('shows__card-date--ctn');
 
+        let showsVenueCtn = document.createElement("div");
+        showsVenueCtn.classList.add('shows__card-venue--ctn');
+
+        let showsLocCtn = document.createElement("div");
+        showsLocCtn.classList.add('shows__card-location--ctn');
+
+        let showsBtnCtn = document.createElement("div");
+        showsBtnCtn.classList.add('shows__card-button--ctn');
+
+        //Table Titles
+        let showsTbTitleDate = document.createElement("h3");
+        showsTbTitleDate.classList.add('shows__card-title--tb');
+        showsTbTitleDate.innerHTML = "Date";
+
+        let showsTbTitleVenue = document.createElement("h3");
+        showsTbTitleVenue.classList.add('shows__card-title--tb')
+        showsTbTitleVenue.innerHTML = "Venue";
+
+        let showsTbTitleLoc = document.createElement("h3");
+        showsTbTitleLoc.classList.add('shows__card-title--tb')
+        showsTbTitleLoc.innerHTML = "Location";
+
+        //Venue, Date, Location
         let showsVenue = document.createElement("h3");
         showsVenue.classList.add('shows__card-title');
         showsVenue.classList.add('shows__card-title--hide');
@@ -75,25 +97,58 @@ displayShows = () => {
         showsLocationInfo.classList.add('shows__card-text');
         showsLocationInfo.textContent = show.location;
 
+        let showsDate = document.createElement("h3");
+        showsDate.classList.add('shows__card-title');
+        showsDate.classList.add('shows__card-title--hide');
+        showsDate.innerHTML = "Date"
+
+        let showsDateInfo = document.createElement("h4");
+        showsDateInfo.classList.add('shows__card-text');
+        showsDateInfo.textContent = show.date
+
+        //Button
         let showsBuyButton = document.createElement("button");
         showsBuyButton.classList.add('shows__button');
         showsBuyButton.textContent = show.button;
 
+        //Divider
         let showsDvd = document.createElement("hr");
         showsDvd.classList.add('divider');
     
-         //append dynamically rendered elements
-        showsCard.appendChild(showsTitle);
-        showsCard.appendChild(showsTextBold);
-        showsCard.appendChild(showsVenue);
-        showsCard.appendChild(showsVenueInfo);
-        showsCard.appendChild(showsLocation);
-        showsCard.appendChild(showsLocationInfo);
-        showsCard.appendChild(showsBuyButton)
-        document.querySelector(".shows").append(showsDvd);
+        //append elements together
 
+        //append to showsCard
+        showsCard.appendChild(showsList);
+
+        //append to showsList
+        showsList.appendChild(showsDateCtn);
+        showsList.appendChild(showsVenueCtn);
+        showsList.appendChild(showsLocCtn);
+        showsList.appendChild(showsBtnCtn);
+
+        //append to date container
+        showsDateCtn.appendChild(showsTbTitleDate);
+        showsDateCtn.appendChild(showsDate);
+        showsDateCtn.appendChild(showsDateInfo);
+
+        //append to venue container
+        showsVenueCtn.appendChild(showsTbTitleVenue);
+        showsVenueCtn.appendChild(showsVenue);
+        showsVenueCtn.appendChild(showsVenueInfo);
+
+        //append to location container
+        showsLocCtn.appendChild(showsTbTitleLoc);
+        showsLocCtn.appendChild(showsLocation);
+        showsLocCtn.appendChild(showsLocationInfo);
+
+        //append to button container
+        showsBtnCtn.appendChild(showsBuyButton);
+    
         document.querySelector(".shows").append(showsCard);
+        document.querySelector(".shows").append(showsDvd);
         });
+
+    
 };
 
 displayShows();

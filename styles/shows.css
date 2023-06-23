@@ -370,6 +370,14 @@
     align-items: center;
   }
 }
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .shows__button {
+    width: 100%;
+    margin: 0;
+    padding: 0.75rem 3rem;
+    align-items: center;
+  }
+}
 @media (min-width: 768px) and (max-width: 1279px) {
   .shows__card-header {
     display: flex;
@@ -402,7 +410,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 0 2rem 0;
+    padding: 0 0 1rem 0;
   }
 }
 @media (min-width: 1280px) and (max-width: 5000px) {
