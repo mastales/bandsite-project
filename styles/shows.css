@@ -278,6 +278,12 @@
   display: flex;
   flex-direction: column;
 }
+.shows__card {
+  padding: 1rem 0;
+}
+.shows__card :hover {
+  background-color: #FAFAFA;
+}
 .shows__title {
   margin: 0;
   padding: 1.5rem 0 1rem 0;
@@ -299,7 +305,6 @@
 .shows__card-list {
   display: flex;
   flex-direction: column;
-  padding-bottom: 1.5rem;
 }
 .shows__card-title {
   text-transform: uppercase;
@@ -384,6 +389,12 @@
     justify-content: space-around;
   }
 }
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .shows__card-header {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 @media (min-width: 768px) and (max-width: 1279px) {
   .shows__card-title--hide {
     display: none;
@@ -410,7 +421,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 0 1rem 0;
   }
 }
 @media (min-width: 1280px) and (max-width: 5000px) {
@@ -425,7 +435,7 @@
 
 .divider {
   border-top: solid 1px #E1E1E1;
-  margin: 1rem 0rem 1rem 0rem;
+  margin: 0;
   width: 100%;
 }
 
