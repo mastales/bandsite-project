@@ -171,8 +171,8 @@ const formSubmission = () => {
     // commentCard.appendChild(commentDvd);
 
     //append to comment parent
-    // document.querySelector(".comment").appendChild(commentDvd);
     document.querySelector(".comment").prepend(commentCard);
+    document.querySelector(".comment").prepend(commentDvd);
     
     clearAllInputs();
 }

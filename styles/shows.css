@@ -233,6 +233,16 @@
   position: relative;
   font-family: "AvenirNextLTPro-Regular";
 }
+.hero__ctn {
+  display: flex;
+  position: absolute;
+}
+.hero__text-ctn {
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+}
 .hero__title {
   font-family: "AvenirNextLTPro-Regular";
   color: white;
@@ -242,6 +252,15 @@
   position: absolute;
   top: 4.5rem;
   align-self: flex-end;
+  z-index: 100;
+}
+.hero__media {
+  width: 90vw;
+  display: flex;
+  position: relative;
+  align-self: center;
+  top: 17rem;
+  left: 2rem;
   z-index: 100;
 }
 .hero__subtitle {
@@ -272,6 +291,56 @@
   z-index: 1;
 }
 
+@media (min-width: 768px) and (max-width: 1279px) {
+  .hero__title {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .hero__title {
+    font-size: 4rem;
+    position: relative;
+    width: 40vw;
+    top: 7rem;
+    margin-left: 9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .hero__img {
+    height: 50rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .hero__img {
+    height: 40rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .hero__subtitle {
+    top: 5rem;
+    left: 0.5rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .hero__subtitle {
+    top: 6rem;
+    left: 8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .hero__media {
+    top: 25rem;
+    left: 3rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .hero__media {
+    top: 10rem;
+    left: 45rem;
+    width: 35vw;
+  }
+}
+
 .shows {
   font-family: "AvenirNextLTPro-Regular";
   padding: 0 1rem 0 1rem;
@@ -283,6 +352,9 @@
 }
 .shows__card :hover {
   background-color: #FAFAFA;
+}
+.shows__card :focus {
+  background-color: #E1E1E1;
 }
 .shows__title {
   margin: 0;
@@ -429,7 +501,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 5rem 2rem 20rem;
+    padding: 0 5rem 1rem 20rem;
   }
 }
 
@@ -437,6 +509,12 @@
   border-top: solid 1px #E1E1E1;
   margin: 0;
   width: 100%;
+}
+@media (min-width: 1280px) and (max-width: 5000px) {
+  .divider {
+    width: 80%;
+    margin-left: 13rem;
+  }
 }
 
 /* Font Face Links */

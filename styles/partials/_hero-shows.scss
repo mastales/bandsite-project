@@ -38,6 +38,18 @@
     position: relative;
     font-family: "AvenirNextLTPro-Regular";
     
+    &__ctn {
+      display: flex;
+      position: absolute;
+    }
+
+    &__text-ctn {
+        display: flex;
+        position: absolute;
+        z-index: 100;
+        width: 100vw;
+    }
+
     &__title { 
         font-family: "AvenirNextLTPro-Regular";
         color: white;
@@ -47,6 +59,15 @@
         position: absolute;
         top: 4.5rem;
         align-self: flex-end;
+        z-index: 100;
+    }
+    &__media {
+        width: 90vw;
+        display: flex;
+        position: relative;
+        align-self: center;
+        top: 17rem;
+        left: 2rem;
         z-index: 100;
     }
 
@@ -60,6 +81,7 @@
         top: 1rem;
         z-index: 100;
     }
+
 
     &__img {
         width: 100%;
@@ -80,6 +102,59 @@
     }
 }
 
+.hero {
+    
+    &__title { 
+        @include tablet() {
+            font-size: 5rem;
+        }
+
+        @include desktop() {
+            font-size: 4rem;
+            position: relative;
+            width: 40vw;
+            top: 7rem;
+            margin-left: 9rem;
+        }
+    }
+
+    &__img {
+        
+        @include tablet() {
+            height: 50rem;
+        }
+        
+        @include desktop() {
+            height: 40rem;
+        }
+    }
+    &__subtitle {
+        @include tablet() {
+            top: 5rem;
+            left: 0.5rem;
+        }
+
+        @include desktop() {
+            top: 6rem;
+            left: 8rem;
+        }
+    }
+    
+    &__media {
+        @include tablet() {
+            top: 25rem;
+            left: 3rem;
+        }
+
+        @include desktop() {
+            top: 10rem;
+            left: 45rem;
+            width: 35vw;
+
+        }
+    }
+}
+
 .shows {
     font-family: "AvenirNextLTPro-Regular";
     padding: 0 1rem 0 1rem;
@@ -90,6 +165,9 @@
         padding: 1rem 0;
         :hover{
             background-color: #FAFAFA;
+        }
+        :focus {
+            background-color: #E1E1E1;
         }
     }
 
@@ -246,7 +324,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-end;
-            padding: 0 5rem 2rem 20rem;
+            padding: 0 5rem 1rem 20rem;
         }
     }
 }
@@ -254,4 +332,9 @@
 .divider { 
     @include divider;
     width: 100%;
+
+    @include desktop() {
+    width: 80%;
+    margin-left: 13rem;
+    }
 }
