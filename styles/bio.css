@@ -557,29 +557,24 @@
 .comment__card {
   display: flex;
   padding: 1rem 0;
-  border: 1px solid red;
 }
 .comment__card-img {
   height: 2.5rem;
   padding: 0;
   border-radius: 50%;
-  border: 1px solid red;
 }
 .comment__card-name {
   margin: 0;
   font-family: "AvenirNextLTPro-Demi";
   color: #323232;
-  border: 1px solid red;
 }
 .comment__card-date {
   margin: 0;
   font-size: 1rem;
   color: #AFAFAF;
-  border: 1px solid red;
 }
 .comment__text {
   width: 100%;
-  border: 1px solid red;
 }
 .comment__div--left {
   display: flex;
