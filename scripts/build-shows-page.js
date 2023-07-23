@@ -1,44 +1,44 @@
 // create array of information here
-// showsArr = [
-//     {
-//         date: "Mon Sept 06 2021" ,
-//         venue: "Ronald Lane",
-//         location: "San Francisco, CA",
-//         button: "Buy Tickets"
-//     },
-//     {
-//         date: "Tue Sept 21 2021" ,
-//         venue: "Pier 3 East",
-//         location: "San Francisco, CA",
-//         button: "Buy Tickets"
-//     },
-//     {
-//         date: "Fri Oct 15 2021" ,
-//         venue: "View Lounge",
-//         location: "San Francisco, CA",
-//         button: "Buy Tickets"
-//     },
-//     {
-//         date: "Sat Nov 06 2021" ,
-//         venue: "Hyatt Agency",
-//         location: "San Francisco, CA",
-//         button: "Buy Tickets"
-//     },
-//     {
-//         date: "Fri Nov 26 2021" ,
-//         venue: "Moscow Center",
-//         location: "San Francisco, CA",
-//         button: "Buy Tickets"
-//     },
-//     {
-//         date: "Wed Dec 15 2021" ,
-//         venue: "Press Club",
-//         location: "San Francisco, CA",
-//         button: "Buy Tickets"
-//     },
-// ];
+showsArr = [
+    {
+        date: "Mon Sept 06 2021" ,
+        venue: "Ronald Lane",
+        location: "San Francisco, CA",
+        button: "Buy Tickets"
+    },
+    {
+        date: "Tue Sept 21 2021" ,
+        venue: "Pier 3 East",
+        location: "San Francisco, CA",
+        button: "Buy Tickets"
+    },
+    {
+        date: "Fri Oct 15 2021" ,
+        venue: "View Lounge",
+        location: "San Francisco, CA",
+        button: "Buy Tickets"
+    },
+    {
+        date: "Sat Nov 06 2021" ,
+        venue: "Hyatt Agency",
+        location: "San Francisco, CA",
+        button: "Buy Tickets"
+    },
+    {
+        date: "Fri Nov 26 2021" ,
+        venue: "Moscow Center",
+        location: "San Francisco, CA",
+        button: "Buy Tickets"
+    },
+    {
+        date: "Wed Dec 15 2021" ,
+        venue: "Press Club",
+        location: "San Francisco, CA",
+        button: "Buy Tickets"
+    },
+];
 
-// console.table(showsArr);
+console.table(showsArr);
 
 //create function for displaying events on page
 function displayShows() {
@@ -118,9 +118,9 @@ function displayShows() {
             showsDateInfo.textContent = date.toDateString();
 
             //Button
-            // let showsBuyButton = document.createElement("button");
-            // showsBuyButton.classList.add('shows__button');
-            // showsBuyButton.textContent = show.button;
+            let showsBuyButton = document.createElement("button");
+            showsBuyButton.classList.add('shows__button');
+            showsBuyButton.textContent = 'Buy Tickets';
 
             //Divider
             let showsDvd = document.createElement("hr");
@@ -166,8 +166,6 @@ function displayShows() {
         console.log(error)
         });
   }
-  document.addEventListener("DOMContentLoaded", function() {
-    displayShows();
-  });
+displayShows();
 
     
