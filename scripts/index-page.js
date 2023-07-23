@@ -29,8 +29,12 @@ function loadComments () {
   
       let commentCardDate = document.createElement("h4");
       commentCardDate.classList.add('comment__card-date');
-      commentCardDate.innerHTML = comment.timestamp;
+      let dateMs = comment.timestamp;
+      let date = new Date(dateMs);
+      commentCardDate.innerHTML = date.toDateString();
   
+      //timestamp is being added
+      //I need to capture data from timestamp and convert to 
       let commentDivBtm = document.createElement("div");
       commentDivBtm.classList.add('comment__div--bottom');
   
