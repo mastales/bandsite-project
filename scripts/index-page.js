@@ -92,8 +92,8 @@ const formSubmission = () => {
     console.log("submitted");
     // Prepare the comment data
     const commentData = {
-      commenterName: userCommentName,
-      userComment: userCommentText
+      name: userCommentName,
+      comment: userCommentText,
     };
     // Pass the comment data to postComment
     postComment(commentData);
@@ -201,8 +201,8 @@ function fetchComments () {
 
 function postComment(commentData) {
   axios.post('https://project-1-api.herokuapp.com/comments?api_key=14b3921c-334f-4538-9077-206ad4e84fea', {
-    commenterName: commentData.userCommentText,
-    userComment: commentData.userCommentName,
+    name: commentData.userCommentText,
+    comment: commentData.userCommentName,
   })
   .then(function (response) {
     fetchComments();
