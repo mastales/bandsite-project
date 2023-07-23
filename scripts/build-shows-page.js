@@ -41,7 +41,7 @@
 // console.table(showsArr);
 
 //create function for displaying events on page
-displayShows = () => {
+function displayShows() {
     axios
         .get('https://project-1-api.herokuapp.com/showdates?api_key=14b3921c-334f-4538-9077-206ad4e84fea')
         .then(response => {
